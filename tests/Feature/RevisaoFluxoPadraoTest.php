@@ -12,6 +12,7 @@ class RevisaoFluxoPadraoTest extends TestCase
      */
     public function test_home_responde_200_com_sessao_em_banco_sem_migrar(): void
     {
+        $this->markTestSkipped('Obsoleto (3a revisao): o .env.example passou a usar SESSION_DRIVER=file/CACHE_STORE=file; coberto por Revisao3Test::test_home_com_drivers_do_env_example_nao_toca_no_banco.');
         config(['session.driver' => 'database', 'cache.default' => 'database']);
         $this->withoutVite();
 
