@@ -23,16 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-# Laravel
-/vendor
-.env
-.env.backup
-.env.production
-.phpunit.result.cache
-/.phpunit.cache
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/auth.json
+# Java / Maven
+target/
+
+# Build do front (gerado pelo Vite)
+/src/main/resources/static
